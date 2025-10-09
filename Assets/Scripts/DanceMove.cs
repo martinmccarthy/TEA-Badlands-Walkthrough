@@ -10,8 +10,9 @@ public class DanceMove
 
     public float PositionTolerance = 0.1f; 
     public float RotationTolerance = 5f;
+    public float TimeLimit = 5f;
 
-    public DanceMove(Vector3 leftControllerPosition, Quaternion leftControllerRotation, Vector3 rightControllerPosition, Quaternion rightControllerRotation, float positionTolerance, float rotationTolerance)
+    public DanceMove(Vector3 leftControllerPosition, Quaternion leftControllerRotation, Vector3 rightControllerPosition, Quaternion rightControllerRotation, float positionTolerance, float rotationTolerance, float timeLimit)
     {
         LeftControllerPosition = leftControllerPosition;
         LeftControllerRotation = leftControllerRotation;
@@ -19,6 +20,7 @@ public class DanceMove
         RightControllerRotation = rightControllerRotation;
         PositionTolerance = positionTolerance;
         RotationTolerance = rotationTolerance;
+        TimeLimit = timeLimit;
     }
 
     /* based on the threshold when we create the dance move, just check to see if the user is within it */

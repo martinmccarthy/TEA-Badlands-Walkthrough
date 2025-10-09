@@ -19,7 +19,8 @@ public class DanceController : MonoBehaviour
         DanceMove initial = new(
             new Vector3(0.5f, 1.0f, 0.5f), Quaternion.Euler(0, 0, 0),
             new Vector3(-0.5f, 1.0f, 0.5f), Quaternion.Euler(0, 0, 0),
-            0.2f, 15f);
+            0.2f, 15f, 5f
+        );
         danceMoves.Enqueue(initial);
     }
 

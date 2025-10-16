@@ -23,7 +23,9 @@ public class DanceMove
         TimeLimit = timeLimit;
     }
 
-    /* based on the threshold when we create the dance move, just check to see if the user is within it */
+    /* based on the threshold when we create the dance move, just check to see if the user is within it
+     * this should be locked on the local z-axis i think in terms of positioning since we can't control 
+     * how the user does this and it should be relatively irrelevant */
     public bool CheckMove(Vector3 leftPos, Quaternion leftRot, Vector3 rightPos, Quaternion rightRot)
     {
         bool leftPosMatch = Vector3.Distance(LeftControllerPosition, leftPos) <= PositionTolerance;
